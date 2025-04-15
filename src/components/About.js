@@ -1,15 +1,13 @@
+// src/components/About.js
 import React from "react";
-import { image } from "../data/user";
+import Links from "./Links"; // Make sure the import path is correct
 
-function About() {
+function About({ bio, github, linkedin }) {
   return (
     <div id="about">
       <h2>About Me</h2>
-      <p>
-        Hello! I'm a passionate web developer who loves building engaging and
-        interactive websites.
-      </p>
-      <img src={image} alt="I made this" />
+      {bio && bio !== "" && <p>{bio}</p>}
+      <Links github={github} linkedin={linkedin} /> {/* Pass down the links */}
     </div>
   );
 }

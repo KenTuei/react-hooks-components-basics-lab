@@ -1,12 +1,13 @@
+// Home.js
 import React from "react";
-import { username, city } from "../data/user"; // ✅ named import
 
-function Home() {
+function Home({ username, city, image }) {
   return (
     <div id="home">
-        <h1 style={{color: "firebrick"}}>
-      <h1>{username} is a Web Developer from {city}</h1>
-    </h1>
+      <h1 style={{ color: "firebrick" }}>
+        {username} is a Web Developer from {city}
+      </h1>
+      <img src={image} alt="User profile" />
     </div>
   );
 }
