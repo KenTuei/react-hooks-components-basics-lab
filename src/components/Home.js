@@ -4,7 +4,9 @@ import { username, city } from "../data/user"; // ✅ named import
 function Home() {
   return (
     <div id="home">
+        <h1 style={{color: "firebrick"}}>
       <h1>{username} is a Web Developer from {city}</h1>
+    </h1>
     </div>
   );
 }

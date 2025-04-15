@@ -1,11 +1,15 @@
 import React from "react";
-import { image } from "../data/user"; // ✅ named import
+import { image } from "../data/user";
 
 function About() {
   return (
     <div id="about">
-      <h2>About</h2>
-      <img src={image} alt="user" />
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a passionate web developer who loves building engaging and
+        interactive websites.
+      </p>
+      <img src={image} alt="I made this" />
     </div>
   );
 }
